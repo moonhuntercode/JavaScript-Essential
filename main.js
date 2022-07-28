@@ -73,7 +73,7 @@ document.querySelector('#app').innerHTML = //html
         <div class="contenedor_cursos">
             
             <a href="./src/views/pagina-html.html">
-            <!-- //  target="_blank" --!>
+            <!-- //  target="_blank" -->
             <img src=${htmlLogo} class="logo" alt="Vite logo" />
           </a>
           <a href="./src/views/pagina_javaScript.html" >
