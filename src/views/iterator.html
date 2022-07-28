@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/editor-of-code.css">
+    <title>iterator-es6</title>
+</head>
+<body>
+    <a href="/index.html">volver</a>
+    <h1>iterator es6</h1>
+    <p>Symbol.iterator is un interador por defecto para
+        un objeto.el for... (de bucles) es basado en este
+        tipo de de iterador.
+    </p>
+    <p>In the example siguiente,nosotros vamos a ver 
+        como deberiamos implementar esto y como las
+        funciones generador(generator functions) son usadas
+    </p>
+    <span>Example:</span>
+<div class="code_editor">
+    <div class="lines">
+        <span>1 2 3 4 5 6 7</span> <br>
+    </div>
+    let myIterableObj={ <br>
+        [Symbol.iterator]:function*(){ <br>
+            yield 1;yield 2; yield 3; <br>
+        } <br>
+        }; <br>
+        console.log([...myIterableObj]); <br>
+</div>
+<button onclick="fun2()">PRINT OUTPUT</button>
+<p id="test"></p>
+    <script>
+let myIterableObj={
+[Symbol.iterator]:function*(){
+    yield 1;yield 2; yield 3;
+}
+};
+console.log([...myIterableObj]);
+
+function fun2(){
+    const arr=[...myIterableObj];
+    let texto=arr.toString();
+    document.getElementById("test").innerHTML=`[${texto}]`;
+}
+//calculando
+//Sample Input:31
+//Sample Output:6
+let depth=15;
+for(var pies=1;pies<depth;pies++){
+    for(var day=5;day<=depth;day++){
+        if(pies<=depth){
+            continue;}
+    }}
+console.log(pies+" pies");
+console.log(day+" d");
+
+    </script>
+</body>
+</html>

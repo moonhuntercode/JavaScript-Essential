@@ -1,0 +1,21 @@
+body{
+
+    background-color: black;
+    color: white;
+}
+.carta{
+    box-shadow: 0 4px 8px 0 rgb(98, 0, 255);
+    transition: 0.3s;
+    width: 40%;
+}
+  
+  .carta:hover {
+    box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+.contenedor_imagen , img{
+    width: 330px;
+  }

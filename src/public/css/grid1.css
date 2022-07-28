@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+    color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+}
+.grid{
+    display: grid;
+    grid-template-rows: minmax(200px,auto);
+    grid-template-columns:minmax(auto,60%) 1fr;
+}
+.card-texto{
+    background-color: rgb(93, 9, 172);
+    font-weight: bold;
+    color: white;
+}
+.card{
+   
+    border: 10px solid white;
+    border-color: white;
+    border-width: 3px;
+    padding: 20px;
+    border-radius: 13px;
+}
+
+.acordeon{
+    display: none;
+}
+.acordeon input{
+    display: none;
+}
+.acordeon_titulo{
+   display: block;
+    padding: 15px;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border:1.5px solid white;
+}
+.acordeon_titulo:hover{
+    background-color: rgb(238, 79, 111);
+}
+.acordeon__contenido{
+height: 0;
+overflow: hidden;
+margin: 0;
+
+}
+.acordeon input:checked ~ .acordeon__contenido{
+height: auto;
+margin: 15px 0;
+}
+.acordeon-master input:checked ~ .acordeon{
+display: block;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function testeando(){
+            try{
+                var a=Number(prompt('give me a number'))
+                var b=Number(prompt('give me a number'))
+                
+                if(isNaN(a) || isNaN(b) )
+                {
+                    throw 'you gave me a mistake!'
+                }
+                prompt('el resultado es:',)
+            }
+            catch(error)
+            {
+                alert('Error: '+error)
+            }
+        }
+        testeando()
+    </script>
+</body>
+</html>

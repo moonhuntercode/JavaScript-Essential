@@ -1,0 +1,26 @@
+.code_editor{
+    background-color: rgb(23, 23, 23);
+    color: white;
+    display: grid;
+    grid-template-columns: 35px 1fr;
+}
+.lines{
+    margin-right: 17px;
+    color: rgb(171, 119, 255);
+}
+.keyword1{
+    color: blueviolet;
+    font-weight: bold;
+}
+code{
+    display: inline;
+}
+.notas{
+background-color: blueviolet;
+color: white;
+height: 50px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}

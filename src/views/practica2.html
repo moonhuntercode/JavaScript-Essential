@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/normalize.css">
+    <link rel="stylesheet" href="../public/css/main.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a href="/">página principal</a>
+    --- <br>
+<a href="./pagina_javaScript.html">atras</a>
+    <p>Crea un enlace a
+        <a href="https://www.mozilla.org/es-ES/"
+           title="El mejor lugar para encontrar más información acerca de la misión de Mozilla
+                  y cómo contribuir">la página de inicio de Mozilla</a>.
+        </p>
+    <br/>
+    <!--toggles coloridos -->
+    <label  className="switch" >
+        <input placeholder="id" type="checkbox" id="switch2" onclick='functiondarklightmode()'>
+        <span className="slider round"></span>
+    </label>
+
+    
+    <!--CHECKED
+        <label  className="switch">
+        <input type="checkbox" checked>
+        <span className="slider round"></span>
+    </label>-->
+
+    <button id="button-dark-light" onclick='functiondarklightmode(),functiondarklightmode2() '>
+       <span id="span-darkmode-to-lightmode">dark mode</span>
+    </button>
+    
+        <!--toggles coloridos terminados
+        source: https://www.w3schools.com/howto/howto_css_switch.asp
+        -->
+
+     <!-- no funciona
+    <button id="button-dark-light" onclick="functiondarklightmode(),style.fontSize='33px',
+    document.getElementById('button-dark-light').innerHTML='light mode'" >
+        dark mode</button>
+        -->   
+
+    <h2>What can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content</p>
+    <!--Source: https://www.w3schools.com/js/js_intro.asp-->
+    <button type="button"
+    onclick='document.getElementById("demo").innerHTML="HELLO WORLD"'>Click ME!</button>
+    <br/><br/>
+
+    <p id="demo2">Javascript can change the styles of an HTML content</p>
+    <!--Source: https://www.w3schools.com/js/js_intro.asp-->
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='60px'">click</button>
+    <br/><br/>
+
+    <p id="para">Cualquier texto acá</p>
+    <button type="button" onclick="changeColor('rgb(145, 0, 255)');">Azul</button>
+    <br/><br/><br/>
+
+    <p id="cambia-color">probando otro metodo</p>
+    <!--documentación:
+    https://www.w3schools.com/jsref/prop_style_color.asp-->
+    <button onclick="changecolorcorto()">cambio</button>
+    
+      <br/><br/>
+    <h2>JS can validate input</h2>
+    <p>please input a number between 1 and 10</p>
+    <br/><input id="imput1" placeholder="type a number here">
+    <button  onclick="functionstring1()">Enviar</button>
+    <!-- este parrafo reemplaza por el resultado -->
+    <p id="reemplazado1"></p>
+
+<ul>
+    <li>list1</li>
+    <li>list2</li>
+    <li>list3</li>
+</ul>
+
+<fieldset>
+    <legend>escondiendo texto</legend>
+    <h1>What can JavaScript do?</h1>
+<p id="hide">escondeme</p>
+<button type="button" onclick="document.getElementById('hide').style.display='none' ">
+tocame para esconder!</button>
+</fieldset>
+<h2>inputs con required
+    (comprobadores) html5</h2>
+<fieldset id="hide1">
+    <legend>datos de contacto</legend>
+<form action="contacto.html" name="formulario2" method="GET">
+    <label for="nombre">nombre completo</label>
+    <input type="text" name="nombre" id="nombre" maxlength="30" placeholder="type your name here">
+    <!--usando maxleght el uso de esto como capa de seguridad
+    es muy básico, puede mejorar muchisimo si lo validamos con
+    js también-->
+    <label for="email">correo</label>
+    <input id="email" type="email" placeholder="type your email here" required>
+    <br/><label for="hombre">hombre</label>
+    <input title="sexo"
+     type="radio" name="sexo" id="Hombre" value="Hombre" required>
+    <label for="mujer">mujer</label>
+    <input  title="sexo" type="radio" name="sexo" id="Mujer" value="Mujer"  required>
+    <br/>
+    <input  title="terminoss" type="checkbox" name="terminos" id="terminos" required>terminos & condiciones
+    <br/>
+    <input type="submit" name="btn" id="btn" value="enviar" required>
+    <br/>
+    <label for="pais">pais</label>
+    <select name="pais" id="pais">
+        <option value="seleccione" selected disabled hidden>seleccione</option>
+        <!--selected selecciona a este primer valor de arriba como pordefecto
+        pero disable lo deshabilita para no selecccionarlo en el despliege
+    y hidden lo oculta -->
+        <option value="bolivia">bolivia</option>
+        <option value="perú">perú</option>
+        <option value="argentina">argentina</option>
+    </select>
+    <button type="button" onclick="document.getElementById('hide1').style.display='none' ">
+        tocame para esconder!</button>
+</form>
+</fieldset>
+<button type="button" onclick="document.getElementById('hide1').style.display='block' ">
+    tocame para mostrar denuevo!</button>
+    <br/><br/><br/>
+    <h1>formularios con lógica</h1>
+    <fieldset>
+    
+        <p>aquí pondremos alreves las palabras</p>
+            <input placeholder="dato" id="dato_recibido1">
+            <button type="button" onclick="formulario_1()">enviar</button>
+            <p id="texto_reemplazado1"></p>
+
+    </fieldset>
+    
+<h1>lección 18: Vamos a trabajar con datos</h1>
+<!--FORMULARIOS CON HTML Y JS-->
+
+<!--TERMINADO FORMULARIOS-->
+<h1 >LECCIÓN 19</h1>
+<H3 id="cap19">TEMPLATE STRINGS</H3>
+<p>este capitulo lo estamos
+    imprimiendo en consola
+    y en el documento html
+</p>
+<p>estamos utilizando acentos ejemplo:
+     `mensaje`, en vez de "mensaje" y 'mensaje' </p>
+     <p>y ${variable} dentro de los acentos para apurar
+         el proceso talves
+     </p>
+
+    <script src="../js/pro.js"></script>
+</body>
+</html>

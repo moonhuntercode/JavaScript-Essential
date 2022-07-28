@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/es6.css">
+    <link rel="stylesheet" href="../public/css/oops.css">
+    <title>Document</title>
+</head>
+<body>
+    <a href="/">inicio</a>
+    <p>un objeto Map puede ser utilizado para contener pares key/value(clave/value)
+       <br> Una clave o valor en un map puede ser cualquier cosa(objetos y valores
+        primitivos)
+    </p>
+    La sintaxis new Map([iterable]) crea un objeto map en el que iterable es
+    un array o cualquier otro objeto iterable cuyos elementos son arrays(cada
+    uno de ellos con un par clave/valor).
+    Un object es similar a Map pero existen diferencias importantes que hacen sea 
+    preferible utilizar Map en algunos casos:
+    <ol>
+        <li>  las keys o claves pueden ser de cualquier tipo,incluyendo funciones,
+            objetos,y cualquier primitivo.
+        </li>
+        <li>
+              Puedes obtener el tamaño de un Map.
+        </li>
+        <li>
+             Puedes iterar directamente sobre un Map.
+        </li>
+        <li>
+            El rendimiento de Map es mejor en situaciones que implican una frecuente
+            adición y sustracción de pares clave/valor.
+        </li>
+        <li>la propiedad size devuelve la cantidad de pares clave/valor de un map</li>
+
+    </ol>
+    <div class="code_editor">
+        <div class="lines">
+            <span>1 2 3 4 </span> <br>
+            </div>
+            <div class="codigo">
+                
+            
+                    for example <br>
+                    let map = new Map([['k1', 'v1'], ['k2', 'v2']]);<br>
+                
+                console.log(map.size); // 2
+            </div></div>
+<p>Methods</p>
+<ol>
+    <li>set(key, value) Adds a specified key/value pair to the map. If the specified key already exists, value corresponding to it is replaced with the specified value.</li>
+<li>get(key) Gets the value corresponding to a specified key in the map. If the specified key doesn't exist, undefined is returned.</li>
+<li>has(key) Returns true if a specified key exists in the map and false otherwise.</li>
+<li>delete(key) Deletes the key/value pair with a specified key from the map and returns true. Returns false if the element does not exist.</li>
+<li>clear() Removes all key/value pairs from map.</li>
+<li>keys() Returns an Iterator of keys in the map for each element.</li>
+<li>values() Returns an Iterator of values in the map for each element.</li>
+<li>entries() Returns an Iterator of array[key, value] in the map for each element.</li>
+</ol>
+For example:
+<div class="code_editor">
+    <div class="lines">
+        <span>1 2 3 4 5 6 </span> <br>
+        </div>
+        <div class="codigo">
+            let map = new Map(); <br>
+            map.set('k1', 'v1').set('k2', 'v2'); <br>
+            
+            console.log(map.get('k1')); // v1 <br>
+            console.log(map.has('k2')); // true <br>
+            
+            for (let kv of map.entries()) <br>
+                console.log(kv[0] + " : " + kv[1]); <br>
+</div></div>
+</body>
+</html>
