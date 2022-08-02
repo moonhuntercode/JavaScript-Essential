@@ -4,6 +4,7 @@ import javascriptLogo2 from "./src/public/img/javascript-programming-language.we
 import viteLogo from './src/public/vite.svg'
 import htmlLogo from "./src/public/img/html-icon.png"
 import { setupCounter } from './counter.js'
+
 window.onload=()=>{
   var myVar;
   function myFunction() {
@@ -72,11 +73,13 @@ document.querySelector('#app').innerHTML = //html
         <p>toque la imagen para los cursos correspondientes</p>
         <div class="contenedor_cursos">
             
-            <a href="./src/views/pagina-html.html">
+            <a href="/htmlpages"
+            onclick="route()"
+            >
             <!-- //  target="_blank" -->
             <img src=${htmlLogo} class="logo" alt="Vite logo" />
           </a>
-          <a href="./src/views/pagina_javaScript.html" >
+          <a href="/jspages" onclick="route()">
             <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
           </a>
           <h1>Hello Welcome!</h1>
@@ -87,6 +90,9 @@ document.querySelector('#app').innerHTML = //html
 <!-- /* INICIO DE VITE HOME*/ -->
     <div class="card">
     <button id="counter" type="button"></button>
+    <header>
+    <div class="app2"></div>
+    </header>
   </div>
 
 
