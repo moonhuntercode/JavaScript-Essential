@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/reset/general.css" />
+    <link rel="stylesheet" href="../public/css/switch.css" />
+  </head>
+  <body>
+    <div class="container_switch">
+        <h1>switch with javaScript</h1>
+      <button onclick="toggle('sintaxis_twitch')" id="button1">show syntax</button> <br />
+      <div style="display: none" id="sintaxis_twitch">
+        
+        switch (expresión) { <br />
+        case valor1: <br />
+        //Declaraciones ejecutadas cuando el resultado de expresión coincide con
+        el valor1 <br />
+        [break;] <br />
+        case valor2: <br />
+        //Declaraciones ejecutadas cuando el resultado de expresión coincide con
+        el valor2 [break;] <br />
+        ... case valorN: <br />
+        //Declaraciones ejecutadas cuando el resultado de expresión coincide con
+        valorN [break;] <br />
+        default: <br />
+        //Declaraciones ejecutadas cuando ninguno de los valores coincide con el
+        valor de la expresión [break;] <br />
+        }
+      </div>
+      
+      <h3>challenge #1</h3>
+      <ul>
+        <li>Your task is to:</li>
+        <li>create a switch statement with seven cases
+            (for each day can be represented as a number from
+            0-6 or a string)
+        </li>
+        <li>
+            add a default case
+        </li>
+        <li>
+            each case should output somethig
+        </li>
+      </ul>
+
+      <p>example input output:</p>
+      <div class="examples_container">
+        <div class="examples_numbers">
+            1 <br> 2 <br>3<br>4<br>5
+        </div>
+        <div class="examples_content">
+            //Input <br>2<br><br>//Output
+            <br>It is Wednesday my dudes!
+        </div>
+      </div>
+    </div>
+    <script src="../js/switch.js"></script>
+  </body>
+</html>

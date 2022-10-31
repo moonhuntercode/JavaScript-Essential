@@ -1,0 +1,24 @@
+@font-face {
+    font-family: babyHalloween;
+    src: url('../fonts/BabyHalloween.ttf');
+}
+.portada{
+font-family: babyHalloween;
+color: white;
+font-size: 15vw;
+text-align: center;
+}
+.container{
+    width: 100%;height: 100%;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-image:
+    url("../img/background-lila-1.png") ;
+}
+.container img{
+    margin-top: 70px;
+    width: 100vw;
+    justify-self: end;
+}
