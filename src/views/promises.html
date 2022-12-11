@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>promesas</h2>
+    <div class="container_code"><br>
+        const myPromise=new Promise(    (resolve,reject)=>{<br>
+            if (false) {<br> // al poner aquí 
+                el if (false ) rechazamos los <br>
+                resultados dentro de el if,<br>
+                y automáticamente pasamos a <br>
+                imprimir valores (fallas) capturados<br>
+                con catch
+                setTimeout(()=>{<br>
+                    // first print lines from top to bottom<br>
+                    resolve('-------------------')<br>
+                    resolve('I have magic')<br>
+                },2000)//n milliseconds<br>
+                }<br>
+                else{<br>
+                    reject(`--------------- \n<br>
+                    I have a system failure\n<br>
+                    ----------------- <br>
+                    `) <br>
+                }<br>
+            }<br>
+    )<br>
+    // The promise cannot be called,in  the same way as a <br>
+    // normal function myPromise() not working
+    myPromise <br>
+        .then(value=>console.log(value)) <br>
+        .catch(rejectValue=>console.log(rejectValue)) <br>
+        el código anterior nos dá un gran ejemplo <br> de como
+         controlar nuestras promesas
+    </div>
+</body>
+</html>
