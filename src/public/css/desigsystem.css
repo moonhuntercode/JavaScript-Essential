@@ -1,0 +1,40 @@
+html,body{
+    height: 100%;
+}
+.contenedor_1{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+.collapsible{
+    cursor: pointer;
+background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+
+}
+.active, .collapsible:active{
+background-color: rgb(53, 53, 53);
+color: white;
+}
+.content{
+    padding: 0 18px;
+    display: none;
+overflow: hidden;
+}
+.collapsible{
+    width: 30%;
+    font-size: xx-large;
+}
+ol{
+    background-color: black;
+}

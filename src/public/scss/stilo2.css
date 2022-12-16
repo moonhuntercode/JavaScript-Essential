@@ -1,9 +1,7 @@
 body {
   background-color: black;
   color: white;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   font-size: 30px;
 }
@@ -22,24 +20,18 @@ body {
 }
 
 .carta {
-  -webkit-box-shadow: 10px 15px 10px 1px #fff;
-          box-shadow: 10px 15px 10px 1px #fff;
+  box-shadow: 10px 15px 10px 1px #fff;
   border-radius: 30px;
   width: 400px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   border-color: white;
   border-width: 3px;
   display: inline-block;
 }
 
 .contenedor2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -49,5 +41,4 @@ body {
 
 a {
   color: #a071f7;
-}
-/*# sourceMappingURL=stilo2.css.map */
+}/*# sourceMappingURL=stilo2.css.map */
