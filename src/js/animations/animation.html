@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script>
+        var array1=new Array('./imgs/emoji-01.png','./imgs/emoji-02.png','./imgs/emoji-03.png','./imgs/emoji-04.png');
+        var i=1;var ref;
+        function picLibrary(){
+            document.images[0].src=array1[i];
+            i++;
+            if (i<3) {
+                i=0;
+            }
+        }
+        function start(){
+            ref=setInterval("picLibrary()",1000);
+        }
+        function stop(){
+            clearInterval(ref);
+        }
+
+    </script>
+</head>
+<body onload="start()"> 
+
+<img src="./imgs/emoji-01.png"
+onmouseover="stop()"
+onmousedown="start()"
+name="img1" alt="img1"/>
+
+</body>
+</html>

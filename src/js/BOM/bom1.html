@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boom</title>
+   
+</head>
+<body>
+    <button id="abrir-ventana">open window</button> <br>
+    <button id="cerrar-ventana">close window</button> <br>
+    <button id="imprimir-ventana">print window</button> <br>
+    <script>
+        const $btnAbrir=document.getElementById('abrir-ventana')
+        const $btnCerrar=document.getElementById('cerrar-ventana')
+        const $btnImprimir=document.getElementById('imprimir-ventana')
+
+        let ventana;
+        $btnAbrir.addEventListener("click",()=>{
+ventana=window.open("https://victor-code.vercel.app");
+        });
+        $btnCerrar.addEventListener("click",()=>{
+            // cierra la ventana que abrimos,
+            // referenciada en ventana
+            ventana.close();
+        })
+        $btnImprimir.addEventListener("click",()=>{
+            // manda a imprimir la
+            // ventana actual,ojo:POdemos
+            // usar media queries para 
+            // personalizar estilos que pasan,
+            // cuando mandamos a imprimir
+        window.print();
+        })
+
+    </script>
+</body>
+</html>
