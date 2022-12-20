@@ -8,30 +8,45 @@
    
 </head>
 <body>
-    <button id="abrir-ventana">open window</button> <br>
+    <h1>BOOM</h1>
+    <ol>
+        <li>
+            with boom let's handle the browser as an object    
+        </li>
+        <li>
+            boom is not standard,thus,it can change in some browsers
+        </li>
+        <li>
+with this button open a window and let's reference this,to 
+            <button id="abrir-ventana">open window</button> <br>
+        </li>
+    </ol>
+    
     <button id="cerrar-ventana">close window</button> <br>
-    <button id="imprimir-ventana">print window</button> <br>
+    <button id="print-window">print window</button> <br>
+    <br><br>
+    <a href="../../views/pagina_javaScript.html">back</a>
     <script>
         const $btnAbrir=document.getElementById('abrir-ventana')
         const $btnCerrar=document.getElementById('cerrar-ventana')
-        const $btnImprimir=document.getElementById('imprimir-ventana')
+        const $btnImprimir=document.getElementById('print-window')
 
-        let ventana;
+        let newwindow;
         $btnAbrir.addEventListener("click",()=>{
-ventana=window.open("https://victor-code.vercel.app");
+newwindow=window.open("https://victor-code.vercel.app");
         });
         $btnCerrar.addEventListener("click",()=>{
-            // cierra la ventana que abrimos,
-            // referenciada en ventana
-            ventana.close();
+            // cierra la newwindow que abrimos,
+            // referenciada en newwindow
+            newwindow.close();
         })
         $btnImprimir.addEventListener("click",()=>{
-            // manda a imprimir la
+            // manda a print window
             // ventana actual,ojo:POdemos
             // usar media queries para 
             // personalizar estilos que pasan,
-            // cuando mandamos a imprimir
-        window.print();
+            // cuando mandamos a print
+                window.print();
         })
 
     </script>
