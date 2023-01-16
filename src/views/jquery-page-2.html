@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 2</title>
+</head>
+<body>
+    Firstly, prototypes are just objects. In this case, yes: <br>
+
+    jQuery.prototype === jQuery.fn<br>
+    So saying jQuery.fn.map = function() {} is like saying jQuery.prototype.map = function() {}<br>
+    
+    When you instantiate a new jquery object with $(selector | dom node | ...) you are returning a jQuery object which automatically inherits all the prototype methods, including map, tweet, etc. Research Javascript's prototypal inheritence model and how object prototypes work in regard to new<br>
+    
+    $ is just a reference to jQuery which returns a specially modified new object. $ is a function which returns a new object reference. Here's a simplified example (but you really should research more about prototypal inheritence, it has been answered many times repeatedly):<br>
+    
+    var A = function() {<br>
+    };<br>
+    
+    A.prototype.doThing = function() {<br>
+    };<br>
+    
+    var newObj = new A();<br>
+    
+    newObj.doThing // this new object has this method because it's on A's prototype<br>
+    so newObj.doThing is just like $(selector).tweet<br>
+    
+    Also feel free to read the source of jQuery and trace what happens when a new object is created. You can see near the top exactly what is happening under the comment // Define a local copy of jQuery<br>
+    <br><br>
+    <a href="https://stackoverflow.com/questions/13261357/jquery-prototype">SOURCE</a>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ol>
+      <li>Runtime errors can be handled</li>
+      <li>also called exceptions</li>
+      <li>
+        Try,catch,finally and throw are keywords used for exception handling
+      </li>
+    </ol>
+    <script>
+      function testeando() {
+        try {
+          var a = prompt("give me a first number,o una letra");
+          var b = prompt("give me a second number,o una letra");
+
+          if (isNaN(a) && !isNaN(b)) {
+            alert("you gave me a mistake!, it's not a number: " + a);
+            alert(b + ": is a number");
+            throw a + ": it's not a number1";
+          } else if (isNaN(b) && !isNaN(a)) {
+            alert("you gave me a mistake!, it's not a number: " + b);
+            alert(b + ": it's not a number4");
+            throw b + ": it's not a number5";
+          } else if (!isNaN(a) && !isNaN(b)) {
+            alert("both are numbers");
+          } else {
+            alert("both not a number");
+          }
+        } catch (error) {
+          // prompt("el resultado es:" + b);
+          alert("Error: " + error);
+        } finally {
+          throw "These statements execute regardless of whether an exception was thrown or caught.";
+        }
+      }
+      testeando();
+    </script>
+  </body>
+</html>
