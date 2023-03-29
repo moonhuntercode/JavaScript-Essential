@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      a {
+        color: blueviolet;
+        font-size: 30px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>obteniendo elementos</h3>
+    <p class="classElement" id="element">getAttribute</p>
+    getAttribute("id"); para id getAttribute("class"); para
+    clases
+    <br />
+    <h3>estableciendo elementos,o editando</h3>
+    setAttributes
+    <br />
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getAttribute"
+      >fuente</a
+    >
+
+    examples
+    <hr />
+    <img width="150px" src="./mistic-5.jpeg" alt="mistic" />
+    <button onclick="deleteImg()">eliminar imagen</button>
+    <button onclick="addImg()">add image</button>
+    <script>
+      function deleteImg() {
+        const img = document.getElementsByTagName("img")[2];
+        img.removeAttribute("src");
+      }
+      function addImg() {
+        const img = document.getElementsByTagName("img")[2];
+        console.log(img);
+        img.setAttribute("src", "./mistic-5.jpeg");
+      }
+      const el = document.getElementById("element");
+      el.getAttribute("id");
+      console.log(el);
+    </script>
+  </body>
+</html>
