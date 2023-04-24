@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="test1">hola-></p>
+    <script>
+      let button = document.createElement("button");
+      let textNode = document.createTextNode("energy");
+      let msg = document.getElementById("test1");
+      msg.append(button);
+      console.log(msg);
+
+      button.appendChild(textNode);
+      msg.style.color = "blue";
+      console.log(button);
+      if (msg.hasAttribute("style")) {
+        console.log("test exitoso");
+      }
+    </script>
+  </body>
+</html>

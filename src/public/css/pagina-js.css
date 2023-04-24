@@ -1,39 +1,44 @@
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-.contenedor_1{
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr;
-    height: 100%;
+.contenedor_1 {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
 }
-a{
-    text-decoration: none;
-    color: blueviolet;
+a {
+  color: white;
+  font-size: 1.4em;
+  line-height: 50px;
 }
-.collapsible{
-    cursor: pointer;
-background-color: rgb(255, 255, 255);
-color: rgb(0, 0, 0);
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-
+a:active {
+  color: rgb(119, 104, 255);
 }
-.active, .collapsible:active{
-background-color: rgb(53, 53, 53);
-color: white;
+.collapsible {
+  cursor: pointer;
+  background-color: rgb(111, 0, 255);
+  color: rgb(255, 255, 255);
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
 }
-.content{
-    padding: 0 18px;
-    display: none;
-overflow: hidden;
+.active,
+.collapsible:active {
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
-.collapsible{
-    font-size: xx-large;
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }
-ol{
-    background-color: black;
+.collapsible {
+  font-size: xx-large;
+}
+ol {
+  background-color: black;
 }
