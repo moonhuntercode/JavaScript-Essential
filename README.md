@@ -1,4 +1,9 @@
- # Esenciales,Breves y bonitas cosas de JS que nesecité para empezar REact y librerias y framework de JavaScript
+# Esenciales,Breves y bonitas cosas de JS que nesecité para empezar REact y librerias y framework de JavaScript
+# TO-DO
+❌✅🎉
+
+✅ falta mejorar esta documentación
+
 ## Poniendo en practica,y entendiendo más conceptos 
 
 ### añadiendo practica con vanilla,css,html
@@ -7,3 +12,4 @@
 
 ` 1-npm install `(sí es necesario gracias a la nueva version con VIte)
 empezando ediciones desde el 4 de agosto de 2022
+
