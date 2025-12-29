@@ -13,3 +13,5 @@
 ` 1-npm install `(sí es necesario gracias a la nueva version con VIte)
 empezando ediciones desde el 4 de agosto de 2022
 
+✅agregar un compilador similar a el de mdn 
+🚫falta mejorar la documentación
