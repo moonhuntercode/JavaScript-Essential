@@ -1,0 +1,23 @@
+{
+  "name": "javascript-essential",
+  "version": "0.0.1",
+  "description": "❌✅🎉",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonhuntercode/JavaScript-Essential.git"
+  },
+  "keywords": [],
+  "author": "victor code",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonhuntercode/JavaScript-Essential/issues"
+  },
+  "homepage": "https://github.com/moonhuntercode/JavaScript-Essential#readme",
+  "devDependencies": {
+    "vite": "^7.3.0"
+  }
+}
