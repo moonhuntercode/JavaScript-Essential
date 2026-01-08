@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "❌✅🎉",
   "main": "main.js",
-  "engines": {
-    "node": ">=20.0.0"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,6 +21,9 @@
     "web development"
   ],
   "author": "victor code",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moonhuntercode/JavaScript-Essential/issues"
